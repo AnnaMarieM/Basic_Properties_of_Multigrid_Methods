@@ -9,8 +9,6 @@ l = 4; % number of grid levels
 solver = "J"; % J or GS - Jacobi or Gauss-Seidel solver
 omega = 4/5;
 
-repeat = 5;
-
 % Init matrices 
 A = cell(1, l);  
 for i = 1:l       
@@ -46,7 +44,7 @@ ResI= zeros(6,3);
 figure(1);
 
 ff_all = {f2, f3, f4, f5, f6, f7};
-leg = {"f2", "f3", "f4", "f5", "f6", "f7"};
+leg = {"f1", "f2", "f3", "f4", "f5", "f6"};
 
 
 
