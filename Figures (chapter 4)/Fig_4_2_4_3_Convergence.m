@@ -20,6 +20,7 @@ u_8 = f8(jj)';
 
 f = zeros(n+1,1);
 
+
 if solver == "J"
     [x_1,it1,resnorm1,errornorm1] = Jacobi_for_SLE(A,u_1,f,tol,A\u_1);
     [x_2,it2,resnorm2,errornorm2] = Jacobi_for_SLE(A,u_2,f,tol,A\u_2);
@@ -40,20 +41,20 @@ semilogy([1, resnorm8/resnorm8(1)]); hold on
 semilogy([1, resnorm4/resnorm4(1)]); hold on
 semilogy([1, resnorm2/resnorm2(1)]); hold on
 semilogy([1, resnorm1/resnorm1(1)])
-% davame sem jednicku na zacatek, protoze resnorm8/resnorm8(1) zacina az
-% reziduem v prvni iterace
-legend('v_8', 'v_4', 'v_2', 'v_1')
-% title('Relative residual norm')
+legend("v_8", "v_4", "v_2", "v_1")
+ylabel("Relative residual")
+xlabel("Iteration")
+%title("Relative residual norm")
 hold off
-% set(gca,'YScale','lin') %pokud bychom chteli linearni osu y, jako v
-% knizce
+
 
 figure(2);
 semilogy([1, errornorm8/errornorm8(1)]); hold on
 semilogy([1, errornorm4/errornorm4(1)]); hold on
 semilogy([1, errornorm2/errornorm2(1)]); hold on
 semilogy([1, errornorm1/errornorm1(1)])
-legend('v_8', 'v_4', 'v_2', 'v_1')
-% title('Relative error norm')
+legend("v_8", "v_4", "v_2", "v_1")
+ylabel("Relative error")
+xlabel("Iteration")
+% title("Relative error norm")
 hold off
-% set(gca,'YScale','lin')

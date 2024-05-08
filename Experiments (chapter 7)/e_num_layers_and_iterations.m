@@ -5,7 +5,7 @@ o = 128; % 3rd dimension
 maxk = 7;
 maxl = 6;
 results = cell(maxk, maxl-1); 
-repetitions = 1;
+repeat = 5;
 
 % Right side
 f = ones(abs((m-1)*(n-1)*(o-1)),1);

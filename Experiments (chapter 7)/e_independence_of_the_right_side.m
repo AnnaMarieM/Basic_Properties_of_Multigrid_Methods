@@ -9,6 +9,8 @@ l = 4; % number of grid levels
 solver = "J"; % J or GS - Jacobi or Gauss-Seidel solver
 omega = 4/5;
 
+repeat = 5;
+
 % Init matrices 
 A = cell(1, l);  
 for i = 1:l       
@@ -35,7 +37,7 @@ f6 = reshape(f, [], 1);
 f = 1 ./ sqrt((x - 0.7).^2 + (y - 0.3).^2 + (z - 0.5).^2 + 1e-5);
 f7 = reshape(f, [], 1); 
 
-ResI= zeros(7,3);
+ResI= zeros(6,3);
 
 
 %% run test
@@ -44,7 +46,9 @@ ResI= zeros(7,3);
 figure(1);
 
 ff_all = {f2, f3, f4, f5, f6, f7};
-leg = {'f2', 'f3', 'f4', 'f5', 'f6', 'f7'};
+leg = {"f2", "f3", "f4", "f5", "f6", "f7"};
+
+
 
 for index = 1:length(ff_all)
     ff = ff_all{index};
@@ -62,13 +66,14 @@ for index = 1:length(ff_all)
     end
     t = toc(s);
     semilogy(res_norm/res_norm(1)); hold on;
-    ResI(1,:) = [t, iteration, norm(ff - A{l}*u_solution)/norm(ff)];
+    ResI(index,:) = [t, iteration, norm(ff - A{l}*u_solution)/norm(ff)];
 end
 hold off
 legend(leg)
-title('Convergence for varying rhs')
-ylabel('relative residual')
-set(gca,'xticklabel',0:10)
+%title("Convergence for varying rhs")
+xlabel("Iteration")
+ylabel("Relative residual")
+set(gca,"xticklabel",0:10)
 
 
 % relative energy error norm
@@ -103,9 +108,9 @@ end
 
 hold off
 legend(leg)
-title('Convergence for varying rhs')
-ylabel('relative energy error norm')
-set(gca,'xticklabel',0:10)
-
+%title("Convergence for varying rhs")
+xlabel("Iteration")
+ylabel("Relative energy error norm")
+set(gca,"xticklabel",0:10)
 
 return

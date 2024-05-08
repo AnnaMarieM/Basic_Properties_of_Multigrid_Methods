@@ -20,6 +20,8 @@ end
 set(0, "DefaultLineLinewidth", 1.5)
 set(0, "DefaultAxesFontsize", 14)
 
-plot(1:2:n,iterations(1:2:end))
 
+plot(1:2:n,iterations(1:2:end))
+xlabel("Frequency")
+ylabel("Iterations")
 
