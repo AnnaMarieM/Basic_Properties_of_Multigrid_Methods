@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 function [vector] = zero_vector(m,n,o,i)
     if o == 0
         if n == 0

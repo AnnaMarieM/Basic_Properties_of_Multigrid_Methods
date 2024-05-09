@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 n = 500;
 j = 0:n;
 

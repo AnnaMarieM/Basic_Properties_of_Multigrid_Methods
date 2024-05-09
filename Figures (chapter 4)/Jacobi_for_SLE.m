@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 % Solve system of linear equations using the Jacobi method
 
 function [x,it,resnorm,errornorm] = Jacobi_for_SLE(A,b,x,tol,x_exact)

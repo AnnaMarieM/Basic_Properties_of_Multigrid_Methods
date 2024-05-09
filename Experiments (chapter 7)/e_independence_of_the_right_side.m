@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 m = 128; % 1st dimension
 n = 128; % 2nd dimension
 o = 128; % 3rd dimension

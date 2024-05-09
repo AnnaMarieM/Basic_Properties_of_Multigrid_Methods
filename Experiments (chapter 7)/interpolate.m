@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 function [interpolated_vector] = interpolate(vector,m,n,o)
     if n == 0 && o == 0
         interpolated_vector = [1/2 * vector(1), interp1(1:1:length(vector), vector,1:0.5:length(vector)) , 1/2 *vector(length(vector))]';

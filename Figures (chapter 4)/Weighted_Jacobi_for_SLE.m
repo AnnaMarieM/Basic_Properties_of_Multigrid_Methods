@@ -1,8 +1,8 @@
-% Author: Anna Marie Minarovičová, 
-% Title: Basic Properties of Multigrid Methods, 
-% Charles University
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
 
-% Solve system of linear equations using the Jacobi method
+% Solve system of linear equations using the Weighted Jacobi method
 
 function [x,it,resnorm,errornorm] = Weighted_Jacobi_for_SLE(A,b,x,tol,x_exact,omega)
 

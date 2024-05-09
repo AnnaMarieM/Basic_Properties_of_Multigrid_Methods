@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 % Solve system of linear equations using Gauss-Seidel method
 
 function [x,it,resnorm,errornorm] = Gauss_Seidel_for_SLE(A,b,x,tol,x_exact)

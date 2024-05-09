@@ -1,7 +1,11 @@
-n = 200;
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
 
+n = 200;
 j1 = 0:n;
 j2 = 0:2:n;
+
 
 f0 = @(j) sin(j*1*pi/(length(j1)));
 FNk0 = f0(j1);
@@ -47,7 +51,6 @@ nexttile
 plot(j1, FNk4, j2, FNk5)
 legend("\Omega_h", "\Omega_{2h}")
 title("Fourier mode with k = 4")
-
 
 nexttile
 plot(j1, FNk6, j2, FNk7)

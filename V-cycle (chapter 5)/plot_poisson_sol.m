@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 function [] = plot_poisson_sol(m,n,o,u1)
     % plot in 1D
     if n == 0 && o == 0

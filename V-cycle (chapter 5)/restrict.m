@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 function [restricted_vector] = restrict(vector,m,n,o)
     if n == 0 && o == 0
         a = 1/4 * [vector(1:2:(m-2))];

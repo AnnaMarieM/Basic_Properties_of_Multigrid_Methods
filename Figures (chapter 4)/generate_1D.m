@@ -1,5 +1,8 @@
-% generate finite difference matrix for Poisson equation in 1D
-% based on n and m
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
+% Generate finite difference matrix for Poisson equation in 1D
 
 function A = generate_1D(n)
     h = 1/n;

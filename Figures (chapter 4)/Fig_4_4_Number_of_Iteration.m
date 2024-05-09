@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 n = 100; 
 tol = 10^(-3);
 
@@ -32,14 +36,12 @@ set(0, "DefaultLineLinewidth", 2)
 set(0, "DefaultAxesFontsize", 22)
 
 
-% First figure
 subplot(1,2,1);
 plot(1:2:n,iterationsJ(1:2:end))
 xlabel("Frequency")
 ylabel("Iterations")
 title("Jacobi")
 
-% Second figure
 subplot(1,2,2);
 plot(1:2:n,iterationsWJ(1:2:end))
 xlabel("Frequency")

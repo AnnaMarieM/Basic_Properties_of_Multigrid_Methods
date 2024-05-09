@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 n = 500;
 tol = 10^(-3);
 solver = "J"; %"J" for Jacobi, "GS" for Gauss-Seidel

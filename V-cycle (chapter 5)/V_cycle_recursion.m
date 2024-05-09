@@ -1,3 +1,7 @@
+% Author: Anna Marie Minarovičová
+% code supporting the bachelor thesis Basic Properties of Multigrid Methods 
+% Charles University, may 2025
+
 function [u] = V_cycle_recursion(A, f, m, n, o, k1, k2, l, init_vector, solver, omega)
     % Inputs: matrix A, right-side f, 
     %         1st dimension m, 2nd dimension n, 3rd dimension o, 
