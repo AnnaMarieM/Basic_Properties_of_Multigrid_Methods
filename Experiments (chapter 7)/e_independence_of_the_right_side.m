@@ -46,7 +46,8 @@ figure(1);
 ff_all = {f2, f3, f4, f5, f6, f7};
 leg = {"f1", "f2", "f3", "f4", "f5", "f6"};
 
-
+set(0, "DefaultLineLinewidth", 2)
+set(0, "DefaultAxesFontsize", 22)
 
 for index = 1:length(ff_all)
     ff = ff_all{index};

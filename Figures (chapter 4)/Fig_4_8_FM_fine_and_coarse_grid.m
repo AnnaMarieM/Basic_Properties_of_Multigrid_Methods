@@ -28,10 +28,8 @@ f7 = @(j) sin(j*8*pi/(length(j2)-1));
 FNk7 = f7(j2);
 
 
-
-
-set(0, "DefaultLineLinewidth", 1.5)
-set(0, "DefaultAxesFontsize", 14)
+set(0, "DefaultLineLinewidth", 2)
+set(0, "DefaultAxesFontsize", 22)
 
 tiledlayout(4,1)
 

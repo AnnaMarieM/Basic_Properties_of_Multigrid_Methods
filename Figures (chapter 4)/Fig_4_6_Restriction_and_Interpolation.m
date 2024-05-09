@@ -23,8 +23,8 @@ b = 1/2 * [f(1); f(2:2:(n-1)); f(n+1)];
 c = 1/4 * [f(1); f(3:2:(n)); f(n+1)];
 fres = a+b+c;
 
-set(0, "DefaultLineLinewidth", 1.5)
-set(0, "DefaultAxesFontsize", 14)
+set(0, "DefaultLineLinewidth", 2)
+set(0, "DefaultAxesFontsize", 22)
 
 tiledlayout(3,1)
 

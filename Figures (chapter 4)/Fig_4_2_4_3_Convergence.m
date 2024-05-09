@@ -1,6 +1,6 @@
 n = 500;
 tol = 10^(-3);
-smoother = "J"; %"J" for Jacobi, "GS" for Gauss-Seidel
+solver = "J"; %"J" for Jacobi, "GS" for Gauss-Seidel
 
 A = generate_1D(n+2);
 
@@ -33,8 +33,8 @@ elseif solver == "GS"
     [x_8,it8,resnorm8,errornorm8] = Gauss_Seidel_for_SLE(A,u_8,f,tol,A\u_8);
 end
 
-set(0, "DefaultLineLinewidth", 1.5)
-set(0, "DefaultAxesFontsize", 14)
+set(0, "DefaultLineLinewidth", 2)
+set(0, "DefaultAxesFontsize", 22)
 
 figure(1);
 semilogy([1, resnorm8/resnorm8(1)]); hold on

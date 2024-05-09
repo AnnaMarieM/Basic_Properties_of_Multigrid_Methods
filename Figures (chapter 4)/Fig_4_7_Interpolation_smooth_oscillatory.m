@@ -18,8 +18,8 @@ fint2 = interp1( linspace(0,1,numel(fres2)), fres2, linspace(0,1,2*(n/2)+1) );
 
 
 
-set(0, "DefaultLineLinewidth", 1.5)
-set(0, "DefaultAxesFontsize", 11)
+set(0, "DefaultLineLinewidth", 2)
+set(0, "DefaultAxesFontsize", 22)
 
 tiledlayout(2,1)
 
