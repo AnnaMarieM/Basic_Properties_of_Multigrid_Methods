@@ -39,22 +39,22 @@ nexttile
 p0 = plot(0:n,f0,'-o', 0:2:n,fres0,'-o');
 p0(1).MarkerSize = 3;
 p0(2).MarkerSize = 3;
-legend("Smooth error", "Restriction of vector")
+legend("Smooth vector", "Restriction of vector")
 
 nexttile
 p1 = plot(0:n,f1,'-o', 0:2:n,fres1,'-o');
 p1(1).MarkerSize = 3;
 p1(2).MarkerSize = 3;
-legend("Smooth error", "Restriction of vector")
+legend("Smooth vector", "Restriction of vector")
 
 nexttile
 p2 = plot(0:n,f2,'-o', 0:2:n,fres2,'-o');
 p2(1).MarkerSize = 3;
 p2(2).MarkerSize = 3;
-legend("Oscillatory error", "Restriction of vector")
+legend("Oscillatory vector", "Restriction of vector")
 
 nexttile
 p3 = plot(0:n,f3,'-o', 0:2:n,fres3,'-o');
 p3(1).MarkerSize = 3;
 p3(2).MarkerSize = 3;
-legend("Oscillatory error", "Restriction of vector")
+legend("Oscillatory vector", "Restriction of vector")
